@@ -1,39 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-html{
-    font-size: 62.5%;
-}
-body{
-    font-size: 16px;
-    background-color: #fafafa;
-}
-.boxEncabezado{
-    display: "block";
-   
-}
-.flexContainer{
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kameron:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.boxNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5em;  
+    height: 5rem;  
     background-color: rgb(0, 0, 0);
 }
-.tituloPrincipal{
+.boxNav h1{
     display: inline-block;
     width: 100%;
     text-align: center;
     padding: 0.5em;
     flex-basis: 10em;
     font-family: 'Playfair Display SC', serif; 
-    color: #fafafa;
 }
-.flexContainer h1 a{
+.boxNav h1 a{
     text-decoration: none;
     color: #fafafa;
 }
-.listado{
+.boxNav p{
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -42,71 +30,204 @@ body{
     font-family: 'Playfair Display SC', serif; 
     color: #fafafa;
 }
-.enlaces {
+.enlacesNav {
     display: flex;
     justify-content: space-around;
-    padding: 3px;
+    padding: .1875rem;
     background-color: #e2e2c9;
-    margin: 0px;
-    padding: 15px;
+    margin: 0rem;
+    padding: .9375rem;
 }
-.enlaceDirecto {
+.enlacesNav li {
     overflow: hidden;
   }
-.enlaceDirecto:hover {
+.enlacesNav li:hover {
     transform: scale(1.3);
     transition: 1s;
 }
-
-.enlaceDirectoContenido {
+.enlacesNav li a {
     font-family: "Mulish", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-.boxMain{
+.bannerHome{
+    height: 800px;
+}
+.bannerHome img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.marcasHome{
+    height: 410px;
+    margin-top: 10px;
+}
+.marcasHome h2{
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.marcasHome div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.marcasHome div img{
+    height: 350px;
+    width: 350px;
+    border: solid 1px #000;
+}
+.promocionesHome{
+    height: 420px;
+    margin-top: 10px;
+}
+.promocionesHome h2{
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.promocionesHome div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+.promocionesHome article{
+    width: 350px;
+    height: 350px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    background-color: #e2e2c9;
+    text-align: center;
+   
+}
+.promocionesHome article figure img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.boxPromoHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+.promocionesHome .boxPromoHome h3{
+    display: inline-block;
+    font-family: "Inika", serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+.promocionesHome .boxPromoHome p{
+    font-family: "Inika", serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+footer{
+    height: 320px;
+    background-color: rgb(0, 0, 0);
+}
+footer h2{
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer section div{
+    width: 350px;
+    height: 200px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    text-align: center;
+}
+.boxFooter svg{
+    margin-top: 10px;
+    color: white;
+}
+.boxFooter h3{
+    font-family: "Inika", serif;
+    margin: 10px 2px;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+.boxFooter p{
+    font-family: "Inika", serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 10px 2px;
+    color: white;
+}
+.boxFooterActive svg{
+    margin-top: 10px;
+}
+.boxFooterActive h3{
+    font-family: "Inika", serif;
+    margin: 35px 2px;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+footer h4{
+    color: white;
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+
+.mainCatalogo{
     margin-top: 1em;
 }
-.boxGaleria{
+.boxCatalogo{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
 }
-.boxArticulo{
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+.boxCatalogo article{
+    border-radius: .625rem;
+    box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.20);
 }
-.boxArticulo:hover{
-    border: 1px solid rgba(125, 5, 134, 0.756);
+.boxCatalogo article:hover{
+    border: .0625rem solid rgba(125, 5, 134, 0.756);
 }
 .fotoVino{
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: .625rem .625rem 0 0;
     transition: all .5s;
 }
-.boxArticulo figure{
-    overflow: hidden;
-}
-.boxArticulo:hover img{
-    transform: scale(1.2);
-}
 .boxDetalleArticulo{
-    padding: 15px 30px;
+    padding: .9375rem 1.875rem; 
     line-height: 2;
     display: flex;
     flex-direction: column;
-    gap: 10px;  
+    gap: .625rem;  
 }
-.detalleArticulo{
+.boxDetalleArticulo h4{
     width: 100%;
-    margin-top:-0.2em;
+    margin-top:-1.875rem;
     font-family: 'Playfair Display SC', serif; 
 }
-.precioArticulo{
+.boxDetalleArticulo p{
     width: 100%;
-    margin-top:-0.8em;
+    margin-top:-2.1875rem;
     font-size: 1.5em;
     font-family: 'Kameron', serif;
 }
