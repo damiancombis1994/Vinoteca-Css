@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kameron:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .boxNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;  
+    height: auto;  
     background-color: rgb(0, 0, 0);
 }
 .boxNav h1{
@@ -22,10 +23,31 @@
     color: #fafafa;
 }
 .boxNav div{
+    width: 9.375rem;
+    height: 3.75rem; 
+}
+.boxNav div section{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.btn-nav{
+    display: none;
+}
+.boxNav div section a{
+    text-decoration: none;
+    width: 2.1875rem; 
+    height: 2.1875rem;
+}
+.boxNav div section a:last-child{
+    margin-left: -0.4375rem;
+}
+.boxNav div section a img{
+    width: 100%;
+    height: 100%;
 }
 .enlacesNav {
     display: flex;
@@ -33,7 +55,7 @@
     padding: .1875rem;
     background-color: #e2e2c9;
     margin: 0rem;
-    padding: .9375rem;
+    padding: 10px;
 }
 .enlacesNav li {
     overflow: hidden;
@@ -48,90 +70,124 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+.marcasHome{
+    height: auto;
+    width: 96%;
+    margin-top: .625rem;
+    background-color: #000000;
+    border-radius: .75rem;
+}
+.marcasHome h2{
+    text-align: center;
+    font-family: Mulish, sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: .625rem 0rem 0rem 0rem;
+    color: white;
+}
+.marcasHome div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: .625rem;
+}
+.marcasHome div i{
+    font-size: 1.5em;
+    color: #fffefe;
+}
+.marcasHome div img{
+    flex-grow: 1;
+    object-fit: cover;
+    height: auto;
+    width: 200px;
+    border: solid .125rem #000;
+    border-radius: .75rem;
+    padding: 10px;
+}
 .bannerHome{
-    height: 800px;
+    height: auto;
+    margin-top: .625rem;
 }
 .bannerHome img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.marcasHome{
-    height: 410px;
-    margin-top: 10px;
+/* Promociones */
+.promocionesHome { 
+    height: auto;
+    margin-top: .625rem;
+    margin-bottom: .9375rem;
+    border: 3px solid #000000;
+    border-radius: .75rem;
+    background-color: rgb(0, 0, 0);
 }
-.marcasHome h2{
+.promocionesHome h2 {
     text-align: center;
-    font-family: "Inika", serif;
+    font-family: Mulish, sans-serif;
     font-size: 2.5em;
     font-weight: 300;
-    margin: 10px 0px;
+    margin: .625rem 0rem;
 }
-.marcasHome div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.marcasHome div img{
-    height: 350px;
-    width: 350px;
-    border: solid 1px #000;
-}
-.promocionesHome{
-    height: 420px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.promocionesHome h2{
-    text-align: center;
-    font-family: "Inika", serif;
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: 10px 0px;
-}
-.promocionesHome h2 a{
+.promocionesHome h2 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(251, 249, 249);
 }
-.promocionesHome div{
+.promocionesHome div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
+    justify-content: space-around;  
+    align-items: center; 
+    margin-bottom:10px; 
 }
-.promocionesHome article{
-    width: 350px;
-    height: 350px;
-    border: solid 1px #000;
-    border-radius: 5px;
-    background-color: #e2e2c9;
-    text-align: center;
-   
+.promocionesHome div i {
+    font-size: 1.5em;
+    color: #ffffff;
 }
-.promocionesHome article figure img{
+.promocionesHome article {
+    width: 18.75rem;
+    height: auto;
+}
+.promocionesHome article figure {
+    margin: 0; 
+}
+.promocionesHome article figure img {
+    border: 2px solid #000000;
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-.boxPromoHome{
+.boxPromoHome {
     display: flex;
-    flex-direction: row;
+    position: relative;
+    height: 1.25rem;
     justify-content: space-between;
-    height: 30px;
-    align-items: center;
+    align-items: center; 
+    padding: .625rem; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    
 }
-.promocionesHome .boxPromoHome h3{
-    display: inline-block;
-    font-family: "Inika", serif;
-    font-size: 2em;
+.promocionesHome .boxPromoHome h3 {
+    font-family: Mulish, sans-serif;
+    position: absolute;
+    left: 0%;
+    font-size: 1.5em; 
     font-weight: 300;
+    margin: 0rem 0rem 0rem .125rem;
+    color: #fafafa;
 }
-.promocionesHome .boxPromoHome p{
-    font-family: "Inika", serif;
+.promocionesHome .boxPromoHome p {
+    position: absolute;
+    right: 0%;
+    font-family: Mulish, sans-serif;
     font-size: 1.5em;
     font-weight: 300;
+    margin: 0rem .125rem 0rem 0rem;
+    color: #fafafa;
 }
 footer{
-    height: 320px;
+    height: 20rem;
     background-color: rgb(0, 0, 0);
 }
 footer h2{
@@ -139,8 +195,8 @@ footer h2{
     font-family: "Inika", serif;
     font-size: 2.5em;
     font-weight: 300;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    margin-top: .0625rem;
+    margin-bottom: .625rem;
     color: white;
 }
 footer section{
@@ -149,19 +205,19 @@ footer section{
     justify-content: space-around;
 }
 footer section div{
-    width: 350px;
-    height: 200px;
-    border: solid 1px #000;
-    border-radius: 5px;
+    width: 21.875rem;
+    height: 12.5rem;
+    border: solid .0625rem #000;
+    border-radius: .3125rem;
     text-align: center;
 }
 .boxFooter svg{
-    margin-top: 10px;
+    margin-top: .625rem;
     color: white;
 }
 .boxFooter h3{
     font-family: "Inika", serif;
-    margin: 10px 2px;
+    margin: .625rem .125rem;
     font-size: 1.5em;
     font-weight: 300;
     color: white;
@@ -170,15 +226,15 @@ footer section div{
     font-family: "Inika", serif;
     font-size: 1.5em;
     font-weight: 300;
-    margin: 10px 2px;
+    margin: .625rem .125rem;
     color: white;
 }
 .boxFooterActive svg{
-    margin-top: 10px;
+    margin-top: .625rem;
 }
 .boxFooterActive h3{
     font-family: "Inika", serif;
-    margin: 35px 2px;
+    margin: 2.1875rem .125rem;
     font-size: 1.5em;
     font-weight: 300;
     color: white;
@@ -187,12 +243,10 @@ footer h4{
     color: white;
     text-align: center;
     font-family: "Inika", serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: .625rem;
 }
-
-
 
 .mainCatalogo{
     margin-top: 1em;
@@ -201,6 +255,7 @@ footer h4{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
+    margin-bottom: .9375rem;
 }
 .boxCatalogo article{
     border-radius: .625rem;
@@ -220,18 +275,19 @@ footer h4{
     padding: .9375rem 1.875rem; 
     line-height: 2;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
     gap: .625rem;  
 }
 .boxDetalleArticulo h4{
-    width: 100%;
-    margin-top:-1.875rem;
+    font-family: Mullish, sans-serif;
+   margin: 0rem;
     font-family: 'Playfair Display SC', serif; 
 }
 .boxDetalleArticulo p{
-    width: 100%;
-    margin-top:-2.1875rem;
-    font-size: 1.5em;
+    font-family: Mullish, sans-serif;
+    margin: 0rem;
     font-family: 'Kameron', serif;
 }
 
@@ -239,7 +295,7 @@ footer h4{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 712px;
+    height: 44.5rem;
     background-color: rgb(0, 0, 0);
 }
 .boxContacto div{
@@ -257,11 +313,11 @@ footer h4{
     height: 100%;
     flex-direction: column; 
     align-items: center;
-    margin-top: 15px;
+    margin-top: .9375rem;
 }
 .boxContacto .boxFormContacto form h2{
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-family: "Inika", serif;
 }
 .boxContacto .boxFormContacto form input{
@@ -269,29 +325,29 @@ footer h4{
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-bottom: #e2e2c9;
-    width: 700px; 
-    font-size: 25px;
-    margin: 10px 0px;
-    padding: 15px 0px;
+    width: 43.75rem; 
+    font-size: 1.5625rem;
+    margin: .625rem 0rem;
+    padding: .9375rem 0rem;
 }
 .boxContacto .boxFormContacto form textarea{
     font-family: "Inika", serif;
     color: rgb(0, 0, 0);
-    font-size: 25px;
-    height: 280px;
-    width: 700px; 
-    margin: 10px 0px;
+    font-size: 1.5625rem;
+    height: 17.5rem;
+    width: 43.75rem; 
+    margin: .625rem 0rem;
 }
 .boxContacto .boxFormContacto form .btnEnviarForm{
     color: black;
     background-color: #fafafa;
-    width: 208px;
-    height: 30px;
+    width: 13rem;
+    height: 1.875rem;
     font-family: "Inika", serif;
     display: block;
     text-align: center;
-    padding: 1px 15px;
-    margin: 8px 0px;
+    padding: .0625rem .9375rem;
+    margin: .5rem 0rem;
 }
 
 .titlePromociones{
@@ -299,18 +355,19 @@ footer h4{
     font-family: "Inika", serif;
     font-size: 2.5em;
     font-weight: 300;
-    margin: 10px 0px 0px 0px;
+    margin: .625rem 0rem 0rem 0rem;
 }
 .promocionesHome h3{
     text-align: left;
     font-family: "Inika", serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 300;
-    margin: 0px 0px 10px 10px;
+    margin: 0rem 0rem .625rem .625rem;
+    color: #ffffff;
 }
 .promocionesHome h3 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .titlePromocionesCat{
@@ -318,8 +375,222 @@ footer h4{
     font-family: "Inika", serif;
     font-size: 2.5em;
     font-weight: 300;
-    margin: 10px 0px 10px 0px;
+    margin: .625rem 0rem .625rem 0rem;
 }
+
+@media(max-width: 1005px){
+    
+    .marcasHome{
+        height: auto;
+    }
+    .marcasHome h2{
+       font-size: 2.1em;   
+    }
+    .marcasHome div img{
+        width: 150px;
+    }
+    .promocionesHome article {
+        width: 210px;
+    }
+    .promocionesHome .boxPromoHome h3 {
+        font-size: 16px;
+    }
+    .promocionesHome .boxPromoHome p{
+        font-size: 16px;
+    }
+    .boxCatalogo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer{
+        height: 35rem;
+    }
+    footer section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .625rem;
+        align-items: center;
+        margin: 0rem .625rem;
+        margin-bottom: .625rem;
+        margin-top: .625rem;
+        justify-content: center;
+        justify-items: center;
+    }
+    footer h4{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: .625rem;
+    }
+    .titlePromociones{
+        font-size: 30px;
+    }
+    .promocionesHome h3{
+        font-size: 25px;
+    }
+    
+}
+
+
+/*TABLET*/
+@media(max-width: 768px){
+    .enlacesNav{
+        padding: 5px;
+    }
+    .enlacesNav li a{
+        font-size: 15px;
+    }
+    .marcasHome h2{
+        font-size: 1.5em;
+    }
+    .marcasHome div img:nth-child(2){
+        display: none;
+    }
+    .marcasHome div i{
+        font-size: 10px;
+    }
+    .promocionesHome div i {
+        font-size: 16px;
+    }
+    .promocionesHome h2{
+        font-size: 1.8em;
+    }
+    .promocionesHome article {
+        width: 150px;
+    }
+    .promocionesHome .boxPromoHome h3 {
+        font-size: 14px;
+    }
+    .promocionesHome .boxPromoHome p{
+        font-size: 14px;
+    }
+    .boxCatalogo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        height: 28rem;
+    }
+    footer section{
+        grid-template-columns: repeat(2, 150px);
+        gap: 0rem;
+        margin: 0rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        justify-content: space-around;
+        justify-items: center; 
+    }  
+    .boxFooter{
+        width: 200px;
+        height: 150px;
+    }
+    .boxFooterActive{
+        width: 200px;
+        height: 150px;
+    }
+    .boxFooterActive h3{
+        font-size: 15px;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+    .boxFooter h3{
+        font-size: 15px;
+    }
+    .boxFooter p{
+        font-size: 15px;
+    }
+    .titlePromociones{
+        font-size: 25px;
+    }
+    .promocionesHome h3{
+        font-size: 20px;
+    }
+}  
+@media(max-width: 550px){
+
+    .boxNav h1{
+        text-align: left;
+    }
+    .iconNav{
+        display: none;
+    }
+    .enlacesNav{
+        display: none;
+    }
+    .btn-nav{
+        display: block;   
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+    .btn-nav button{
+        background-color: transparent;
+        border: none;
+    }
+    .marcasHome div{
+        gap: .1875rem;
+    }
+    .marcasHome h2{
+        font-size: 1.2em;
+    }
+    .marcasHome div img{
+        width: 80px;
+    }
+    .dArticle{
+        display: none;
+    }
+   
+    .boxCatalogo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .boxCatalogo article{
+        width: 100%;
+    ;
+    }
+    .boxCatalogo article figure img{
+        width: 100%;
+        height: 500px;
+    }
+    .boxFooter h3{
+        font-size: 15px;
+    }
+    .boxFooter p{
+        font-size: 15px;
+    }
+    .titlePromociones{
+        font-size: 20px;
+    }
+    .promocionesHome h3{
+        font-size: 16px;
+    }
+}
+
+/*MOBILE*/
+@media(max-width: 400px){
+    .boxNav h1{
+        font-size: 20px;
+    }
+    .marcasHome div{
+        justify-content: space-evenly;
+    }
+    .marcasHome div img:nth-child(3){
+        display: none;
+    }
+    .promocionesHome div article{
+        width: 140px;
+    }
+    .promocionesHome .boxPromoHome h3 {
+        font-size: 14px;
+    }
+    .promocionesHome .boxPromoHome p{
+        font-size: 14px;
+    }
+    footer{
+        height: 47rem;
+    }
+    footer section{
+        grid-template-columns: repeat(1, 150px);
+    }  
+   
+}
+
+
 
 
 
