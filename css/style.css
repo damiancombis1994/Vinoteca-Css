@@ -70,6 +70,11 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
+
+
+
 .marcasHome{
     height: auto;
     width: 96%;
@@ -114,78 +119,39 @@
     width: 100%;
     height: 100%;
 }
-/* Promociones */
-.promocionesHome { 
-    height: auto;
-    margin-top: .625rem;
-    margin-bottom: .9375rem;
-    border: 3px solid #000000;
-    border-radius: .75rem;
-    background-color: rgb(0, 0, 0);
+.secCarruScale{
+   margin: 20px 0px;
 }
-.promocionesHome h2 {
-    text-align: center;
-    font-family: Mulish, sans-serif;
+.secCarruScale h4{
+    font-family: "mulish", sans-serif;
     font-size: 2.5em;
     font-weight: 300;
-    margin: .625rem 0rem;
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+    margin-left: 1.25rem;
+    color: black;
 }
-.promocionesHome h2 a {
-    text-decoration: none;
-    color: rgb(251, 249, 249);
-}
-.promocionesHome div {
+.carruScale{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;  
-    align-items: center; 
-    margin-bottom:10px; 
+    justify-content: center;
+    width: 80%;
+    height: 26.875rem; 
+    margin: 0 auto;     
 }
-.promocionesHome div i {
-    font-size: 1.5em;
-    color: #ffffff;
-}
-.promocionesHome article {
-    width: 18.75rem;
-    height: auto;
-}
-.promocionesHome article figure {
-    margin: 0; 
-}
-.promocionesHome article figure img {
-    border: 2px solid #000000;
+.carruScale img{
+    width: 0;
+    flex-grow: 1;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    opacity: 0.8;
+    transition: .5s ease;
 }
-.boxPromoHome {
-    display: flex;
-    position: relative;
-    height: 1.25rem;
-    justify-content: space-between;
-    align-items: center; 
-    padding: .625rem; 
-    background-color: rgba(0, 0, 0, 0.8); 
-    
+.carruScale img:hover{
+    cursor: crosshair;
+    width: 18.75rem;
+    opacity: 1;
+    filter: contrast(120%);
 }
-.promocionesHome .boxPromoHome h3 {
-    font-family: Mulish, sans-serif;
-    position: absolute;
-    left: 0%;
-    font-size: 1.5em; 
-    font-weight: 300;
-    margin: 0rem 0rem 0rem .125rem;
-    color: #fafafa;
-}
-.promocionesHome .boxPromoHome p {
-    position: absolute;
-    right: 0%;
-    font-family: Mulish, sans-serif;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin: 0rem .125rem 0rem 0rem;
-    color: #fafafa;
-}
+
 footer{
     height: 20rem;
     background-color: rgb(0, 0, 0);
@@ -350,33 +316,7 @@ footer h4{
     margin: .5rem 0rem;
 }
 
-.titlePromociones{
-    text-align: center;
-    font-family: "Inika", serif;
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: .625rem 0rem 0rem 0rem;
-}
-.promocionesHome h3{
-    text-align: left;
-    font-family: "Inika", serif;
-    font-size: 1.875rem;
-    font-weight: 300;
-    margin: 0rem 0rem .625rem .625rem;
-    color: #ffffff;
-}
-.promocionesHome h3 a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
 
-.titlePromocionesCat{
-    text-align: center;
-    font-family: "Inika", serif;
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: .625rem 0rem .625rem 0rem;
-}
 
 @media(max-width: 1005px){
     
@@ -388,15 +328,6 @@ footer h4{
     }
     .marcasHome div img{
         width: 150px;
-    }
-    .promocionesHome article {
-        width: 210px;
-    }
-    .promocionesHome .boxPromoHome h3 {
-        font-size: 16px;
-    }
-    .promocionesHome .boxPromoHome p{
-        font-size: 16px;
     }
     .boxCatalogo{
         grid-template-columns: repeat(3, 1fr);
@@ -420,12 +351,16 @@ footer h4{
         font-weight: 300;
         margin-top: .625rem;
     }
-    .titlePromociones{
-        font-size: 30px;
-    }
-    .promocionesHome h3{
-        font-size: 25px;
-    }
+     .secCarruScale h4{
+         font-size: 2.0em;
+     }
+     .carruScale{
+         width: 100%;
+         height: 300px;     
+     }
+     .carruScale img:hover{
+         width: 15rem;
+     }
     
 }
 
@@ -446,21 +381,6 @@ footer h4{
     }
     .marcasHome div i{
         font-size: 10px;
-    }
-    .promocionesHome div i {
-        font-size: 16px;
-    }
-    .promocionesHome h2{
-        font-size: 1.8em;
-    }
-    .promocionesHome article {
-        width: 150px;
-    }
-    .promocionesHome .boxPromoHome h3 {
-        font-size: 14px;
-    }
-    .promocionesHome .boxPromoHome p{
-        font-size: 14px;
     }
     .boxCatalogo{
         grid-template-columns: repeat(2, 1fr);
@@ -495,11 +415,14 @@ footer h4{
     .boxFooter p{
         font-size: 15px;
     }
-    .titlePromociones{
-        font-size: 25px;
+    .secCarruScale h4{
+        font-size: 1.8em;
     }
-    .promocionesHome h3{
-        font-size: 20px;
+    .carruScale{
+        height: 230px;     
+    }
+    .carruScale img:hover{
+        width: 12rem;
     }
 }  
 @media(max-width: 550px){
@@ -532,9 +455,7 @@ footer h4{
     .marcasHome div img{
         width: 80px;
     }
-    .dArticle{
-        display: none;
-    }
+    
    
     .boxCatalogo{
         grid-template-columns: repeat(1, 1fr);
@@ -553,11 +474,11 @@ footer h4{
     .boxFooter p{
         font-size: 15px;
     }
-    .titlePromociones{
-        font-size: 20px;
+    .secCarruScale h4{
+        font-size: 1.5em;
     }
-    .promocionesHome h3{
-        font-size: 16px;
+    .carruScale img:hover{
+        width: 11rem;
     }
 }
 
@@ -572,21 +493,18 @@ footer h4{
     .marcasHome div img:nth-child(3){
         display: none;
     }
-    .promocionesHome div article{
-        width: 140px;
-    }
-    .promocionesHome .boxPromoHome h3 {
-        font-size: 14px;
-    }
-    .promocionesHome .boxPromoHome p{
-        font-size: 14px;
-    }
     footer{
         height: 47rem;
     }
     footer section{
         grid-template-columns: repeat(1, 150px);
     }  
+    .secCarruScale h4{
+        font-size: 1.5em;
+    }
+    .carruScale img:hover{
+        width: 8rem;
+    }
    
 }
 
